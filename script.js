@@ -1,7 +1,16 @@
+var bgColor;
+var tColor;
+function bgStore() {
+    var bgInput = document.getElementById("favColor");
+    bgColor = bgInput.value;
+}
+
+function tStore() {
+    var tInput = document.getElementById("favColor");
+    tColor = tInput.value;
+}
+
 function change() {
-
-    var theInput = document.getElementById("favColor");
-    var theColor = theInput.value;
-
-    document.getElementById("color").style.backgroundColor = theColor;
+    document.getElementById("color").style.backgroundColor = bgColor;
+    document.getElementById("h1Color").style.color = tColor;
 }
